@@ -1,0 +1,25 @@
+.artigos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-items: center;
+    margin: 0 50px;
+    height: auto;
+    width: auto;
+}
+/* Segunda parte dos artigos */
+.secondParte{
+    height: 1000px;
+    display: grid;
+    grid-template-columns: auto 1020px;
+}
+.filtros{
+    display: grid;
+    place-items: center;
+    background-color: aquamarine;
+    margin: 10px;
+}
+.artigosV2 {
+    width: auto;
+    margin-bottom: 50px;
+    float: right;
+}

@@ -1,0 +1,22 @@
+nav {
+	background: rgb(57, 159, 255);
+	height: 80px;
+	width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding-left: 50px;
+	font-weight: bold;
+	cursor: pointer;
+}
+@media (max-width: 768px){
+	#logo {
+		padding-left: 25px;
+	}
+	
+}

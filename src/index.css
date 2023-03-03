@@ -1,0 +1,23 @@
+/* Informações gerais a todo o site */
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white
+}
+
+li{
+  list-style: none;
+}
+
+p{
+  margin: 0;
+}
+
+hr{
+  border: 1px solid rgb(0, 122, 192);
+}

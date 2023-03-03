@@ -1,0 +1,41 @@
+.carrossel{
+    cursor: grab;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.inner{
+    display: flex;
+}
+
+.carrossel-img{
+    object-fit: cover;
+    height: 200px;
+    width: 300px;
+    margin: 0 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    pointer-events: none;
+    display: grid;
+    place-items: center;
+}
+
+.backGreen{
+    background-color: rgb(144, 238, 194);
+}
+.backGrey{
+    background-color: lightgray;
+}
+.backSkyBlue{
+    background-color: rgb(123, 204, 255);
+}
+.backSeaGreen{
+    background-color: rgb(41, 226, 217);
+}
+.backBlue{
+    background-color: lightblue;
+}
+
+.img-resize-help{
+    height: 150px;
+    width: 150px;
+}

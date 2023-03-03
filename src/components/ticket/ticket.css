@@ -1,0 +1,184 @@
+.ticket-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+.image-ticket{
+    cursor: pointer;
+}
+.image-div{
+    height: 200px;
+    width: 300px;
+}
+.article{
+    display: none;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 117, 0.6);
+    color: white;
+}
+.img-artigo{
+    height: 50px;
+    margin: 10px;
+}
+.show{
+    display: flex;
+}
+.title-ticket{
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 0;
+    height: 100px;
+}
+.bg-ticket{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    z-index: -2;
+}
+
+/* 
+--------------------------------------
+  Segunda versão dos tickets do blog
+--------------------------------------
+a segunda versão será usada nos médicos (mas só alguns deles)
+*/
+
+
+.ticket2{
+    height: 140px;
+    width: 1000px;
+    margin: 10px;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    box-shadow: -5px 5px 20px rgb(59, 59, 59);
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-ticket{
+    margin: 10px;
+}
+.bg-ticket2{
+    height: 120px;
+    width: 190px;
+}
+.content-doctor,
+.content-text{
+    margin: 10px 0;
+    margin-right: 10px;
+}
+
+.title-article{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    max-height: 48px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.subtitle-article{
+    color: rgb(65, 65, 65);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.max-line3{
+    -webkit-line-clamp: 3;
+}
+.max-line4{
+    -webkit-line-clamp: 4;
+}
+
+/* Configuração do ticket do médico */
+.ticket-doctor{
+    height: 200px;
+    width: 1000px;
+    margin: 10px;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    box-shadow: -5px 5px 20px rgb(59, 59, 59);
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-ticket-doc{ 
+    margin: 10px;
+}
+.bg-ticket-doc{ 
+    height: 150px;
+    width: 250px;
+}
+.content-doctor{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: 1px solid black;
+}
+.doctor-name{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.describe-doctor{
+    display: flex;
+    padding-bottom: 5px;
+}
+.describe-doctor .content{
+    margin-left: 10px;
+    width: 100%;
+}
+
+.classificacao{
+    width: auto;
+    color: rgb(38, 0, 255);
+    margin-left: 10px;
+    font-size: 20px;
+    height: 20px;
+
+}
+.classificacao .content{
+    /* width: 100%; */
+    width: auto;
+    color: rgb(38, 0, 255);
+    margin-left: 10px;
+    font-size: 20px;
+    height: 20px;
+}
+
+.btns-doctor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.btn-consulta{
+    background-color: rgb(20, 20, 145);
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    height: 40px;
+    margin: 10px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.btn-consulta:nth-last-child(1n+2){
+    background: linear-gradient(45deg, rgb(0, 122, 126) 50%, rgb(44, 0, 204));
+}
+
+@media (max-width: 769px){
+    .ticket-doctor{
+        width: calc(100vw - 20px);
+        margin: 0;
+        background-color: burlywood;
+        margin-bottom: 10px;
+        height: 250px;
+    }
+}

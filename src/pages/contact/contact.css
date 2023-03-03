@@ -1,0 +1,99 @@
+/* ############ Definições gerais ############ */
+.background{ /* Faz as definições gerais da página de contactos */
+    display: grid;
+    place-items: center;
+    height: calc(100vh - 80px);
+    background-image: url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000);
+    background-size: cover;
+}
+.contact-content{ /* Define toda a area que vai conter informação */
+    width: 1000px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+/* ############ Definições gerais dos dois campos presentes da página ############ */
+.contact-form{ /* Realiza as definições gerais da divisória que contem o formulário */
+    background-color: rgb(59, 134, 219);
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 0 25px;
+}
+.other-contacts{ /* Definições gerais da divisória onde mostra as outras formas de contacto */
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 100%;
+    background-color: white;
+    padding: 0 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+/* ############ Definições do formulário de contacto ############ */
+.contact-form h2{ /* Definição do título */
+    font-size: 30px;
+}
+.ipn-contact{ /* Definição dos inputs de email e nome */
+    width: 520px;
+    height: 40px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.textarea-contact{ /* Definição do campo de mensagem */
+    width: 521px;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+.msg-error{ /* Definição da divisória do erro*/
+    color: red;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30px;
+    display: none;
+    place-items: center;
+}
+.showError{ /* Mostra o erro quando existe */
+    display: grid;
+}
+.btn-submit{ /* Definição do botão para enviar a mensagem */
+    height: 30px;
+    width: 200px;
+    background: none;
+    border: 1px blue solid;
+    cursor: pointer;
+    transition: 1s all;
+}
+.btn-submit:hover{ /* Definição do botão para enviar a mensagem quando cursor está em cima do botão*/
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 1s all;
+    color: white;
+}
+
+/* ############ Definições da area de outros contactos ############ */
+.other-contacts-title{ /* Título de cada uma das secções que msotram os outros meios de contacto*/
+    font-size: 20px;
+    font-weight: bold;
+}
+.phone,
+.address{ /* Usado para realizar o espaçamento entre as secções */
+    margin-bottom: 80px;
+}
+.other-contacts-content{ /* Realiza a tabulação do conteúdo das seções */
+    text-indent: 2em;
+}
+.other-contacts-content span{ /* Destingue o subtitulo das seções (usado nos contactos telefónicos) */
+    text-decoration: underline;
+}
+.socialmedia{ /* Definições para mostar as redes sociais */
+    text-indent: 0;
+    width: 100%;
+    text-align: center;
+}

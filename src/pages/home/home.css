@@ -1,0 +1,106 @@
+.form_busca{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    place-items: center;
+    height: 500px;
+    background-color: aquamarine;
+}
+
+/*----typing text----*/
+#title_form{
+    position: relative;
+    top: 80px;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 50px;
+    font-weight: bold;
+}
+.typewrite{
+    margin-left: 8px;
+    color: rgb(57, 159, 255);
+}
+/*--------------------*/
+
+/*------ Input -------*/
+.border_left{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.border_right{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.border_color{
+    border-left: 2px solid rgb(192, 192, 192);
+    border-right: 2px solid rgb(192, 192, 192);
+}
+.inputs{
+    display: inline-flex;
+    box-shadow: 0px 0px 40px rgb(70, 70, 70);
+    border-radius: 20px;
+    height: 40px;
+    width: 755px;
+    z-index: 1;
+}
+.resize{
+    width: 100px;
+}
+/*--------------------*/
+
+/* Configuração da ajuda á data */
+#data {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    right: 112px;
+}
+
+/* Configuração do form e do botão de pesquisar */
+.form_busca form {
+    display: grid;
+    place-items: center;
+}
+.form_busca form input[type="submit"]{
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+}
+
+/*---------------------*/
+
+/* Configurando as bases das ajudas ao utilizador */
+.helping{
+    padding: 10px;
+    height: 608px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (max-width: 769px){
+    .inputs{
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+        height: 150px;
+        justify-content: space-around;
+    }
+    .border_color{
+        border-left: none;
+        border-right: none;
+    }
+    .resize{
+        width: 300px;
+    }
+    #title_form{
+        font-size: 35px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .typewrite{
+        margin: 0;
+    }
+}
